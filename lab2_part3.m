@@ -41,9 +41,7 @@ end
 
 %% ranked pairs by MeanLifetime
 
-Results = table(SupplierA, SupplierB, PairMean, PairMedian, ...
-    'VariableNames', {'SupplierA', 'SupplierB', ...
-    'MeanLifetime', 'MedianLifetime'});
+Results = table(SupplierA, SupplierB, PairMean, PairMedian, 'VariableNames', {'SupplierA', 'SupplierB', 'MeanLifetime', 'MedianLifetime'});
 
 Results = sortrows(Results, 'MeanLifetime', 'descend');
 
